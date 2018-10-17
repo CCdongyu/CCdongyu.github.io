@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="CCdongyu">
-<meta property="og:url" content="http://yoursite.com/tags/Reference/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Input Method">
+<meta property="og:url" content="http://yoursite.com/2018/05/17/input-method/index.html">
 <meta property="og:site_name" content="CCdongyu">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/05/17/input-method/keyboard.jpeg">
+<meta property="og:image" content="http://yoursite.com/2018/05/17/input-method/input.png">
+<meta property="og:image" content="http://yoursite.com/2018/05/17/input-method/qtconfig.png">
+<meta property="og:updated_time" content="2018-05-17T08:56:59.206Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CCdongyu">
+<meta name="twitter:title" content="Input Method">
+<meta name="twitter:image" content="http://yoursite.com/2018/05/17/input-method/keyboard.jpeg">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Reference/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/17/input-method/"/>
 
 
 
 
 
-  <title>Tag: Reference | CCdongyu</title>
+  <title>Input Method | CCdongyu</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,54 +219,154 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Reference<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/17/input-method/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ccdongyu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CCdongyu">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/05/01/docker/" itemprop="url">
-              
-                <span itemprop="name">Docker</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Input Method</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-01T12:49:44+08:00"
-              content="2018-05-01" >
-          05-01
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-17T11:27:27+08:00">
+                2018-05-17
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <img src="/2018/05/17/input-method/keyboard.jpeg">
+<a id="more"></a>
+<p>The problem of input method on ubuntu has troubled me for a long time. Now I make a summary for those problems.</p>
+<p>There are two main types of input method on ubuntu: ibus and fcitx. </p>
+<p>The fcitx, that the sogoupinyin based on, is developed by chinese, and is popular with chinese. Whenever you switch your input method to fcitx, you need reboot your system.</p>
+<p>I prefer ibus. To use it switch your input method to <code>ibus</code>, and set your <code>Input Sources</code> to <code>Chinese(Intelligent Pinyin)</code>, like this:</p>
+<img src="/2018/05/17/input-method/input.png" title="input config">
+<p>The ibus, whose style is closer to the ubuntu, has plenty of problems to fix. For example, the input selection box does not move with the cursor. This is because the ibus dose not register in GUI framwork. To fix this problem, install some packets: <code>sudo apt-get install ibus-gtk ibus-gtk3 ibus-qt4</code>. What is more, if you use the WPS, you would better to install the packet named qtconfig. Start it and set <code>XIM input style</code> like what is shown in the picture.</p>
+<img src="/2018/05/17/input-method/qtconfig.png" title="qtconfig">
+<p>It’s interesting that the system will repair the input method of ibus and fcitx when you open the page of <code>Manage Installed Languages</code> on condition that you made some change on them, such as removing the input method.</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/09/ubuntu/" rel="next" title="Ubuntu">
+                <i class="fa fa-chevron-left"></i> Ubuntu
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/19/fonts-of-ubuntu/" rel="prev" title="Fonts Of Ubuntu">
+                Fonts Of Ubuntu <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -269,6 +374,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -474,6 +583,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
